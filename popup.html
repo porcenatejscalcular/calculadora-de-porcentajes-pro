@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Percentage Calculator Pro</title>
+<link rel="stylesheet" href="popup.css">
+</head>
+<body>
+
+<div class="container">
+
+<h1>Percentage Calculator Pro</h1>
+
+<div class="tabs">
+<button class="tab active" data-tab="percent">%</button>
+<button class="tab" data-tab="discount">Discount</button>
+<button class="tab" data-tab="vat">VAT</button>
+<button class="tab" data-tab="change">Change</button>
+</div>
+
+<div id="percent" class="content active">
+<input type="number" id="num1" placeholder="Number">
+<input type="number" id="percent1" placeholder="Percentage">
+<button onclick="calculatePercent()">Calculate</button>
+</div>
+
+<div id="discount" class="content">
+<input type="number" id="price" placeholder="Original Price">
+<input type="number" id="discountPercent" placeholder="Discount %">
+<button onclick="calculateDiscount()">Calculate</button>
+</div>
+
+<div id="vat" class="content">
+<input type="number" id="vatPrice" placeholder="Amount">
+<input type="number" id="vatPercent" placeholder="VAT %">
+<button onclick="calculateVAT()">Calculate</button>
+</div>
+
+<div id="change" class="content">
+<input type="number" id="oldValue" placeholder="Old Value">
+<input type="number" id="newValue" placeholder="New Value">
+<button onclick="calculateChange()">Calculate</button>
+</div>
+
+<div class="result" id="result">Result will appear here</div>
+
+<button id="copyBtn">Copy Result</button>
+
+<a class="visit-btn"
+href="https://calcularporcentajesonline.es/"
+target="_blank">
+Visit Website
+</a>
+
+</div>
+
+<script src="popup.js"></script>
+
+</body>
+</html>

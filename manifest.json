@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Calculadora de Porcentajes Pro",
+  "version": "1.0.0",
+  "description": "Calcula porcentajes, descuentos, IVA y cambios porcentuales de forma rápida y sencilla.",
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "addon@calcularporcentajesonline.es",
+      "data_collection_permissions": {
+        "required": [
+          "none"
+        ],
+        "optional": []
+      }
+    }
+  },
+
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Calculadora de Porcentajes Pro"
+  },
+
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+
+  "permissions": []
+}
